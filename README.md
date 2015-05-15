@@ -68,6 +68,11 @@ various aspects of the model. See the
 [ANNOTATED\_EXAMPLE.yaml](examples/ANNOTATED_EXAMPLE.yaml) for some of the
 definitions and possible choices.
 
+### Docker
+
+Dockerfiles for CPU and CUDA-GPU provide an isolated and portable deployment to quickly try neon.  See our [docker](http://neon.nervanasys.com/docs/latest/installation.htm#docker)
+based documentation for information on building and running containers from the top-level `docker` directory.
+
 
 ### Running a simple MNIST model (on CPU)
 

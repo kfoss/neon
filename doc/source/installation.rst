@@ -237,6 +237,19 @@ You can always reactivate your virtualenv again at a later time, via
 delete the `.venv` directory.
 
 
+Docker
+----------
+If you want to quickly try neon, or are looking for an isolated and portable deployment, consider using a `Docker <http://www.docker.com>` container.
+
+Scripts for building and running the containers lie within the top-level `docker` directory:
+
+.. code-block:: bash
+
+    ./1-build-neon-<cpu|cuda>.sh
+    ./2-run-neon-<cpu|cuda>.sh
+
+Note that container access to the GPU is normally restricted, requiring explicit access for use.  In the `run` scripts, the `--privileged` runtime switch enables GPU access.
+
 Upgrading
 ---------
 
