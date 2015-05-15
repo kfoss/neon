@@ -52,6 +52,7 @@ RUN apt-get update && \
                         python-numpy \
                         python-pip \
                         python-scipy \
+                        python-sphinx \
                         socat \
                         software-properties-common \
                         sudo \
@@ -72,7 +73,8 @@ RUN pip install ipython \
                 jinja2 \
                 tornado \
                 jsonschema \
-                terminado
+                terminado \
+                sphinxcontrib-napoleon
 
 # setup ipython
 ENV IPYTHONDIR /ipython

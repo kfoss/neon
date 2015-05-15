@@ -10,7 +10,11 @@ RUN apt-get update && \
                           git \
                           cmake \
                           python-pip \
-                          python-dev
+                          python-dev \
+                          python-sphinx
+
+# install sphinx for documentation
+pip install sphinxcontrib-napoleon
 
 # download/configure/install neon
 RUN cd /opt/ && git clone https://github.com/NervanaSystems/neon.git
